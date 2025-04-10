@@ -1,4 +1,4 @@
-#Q&A Discord Bot
+## Q&A Discord Bot
 
 A beginner-friendly Discord bot built with **Java Spring Boot** and **JDA** that uses **Gemini AI** to answer programming-related questions.
 
