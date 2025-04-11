@@ -1,10 +1,9 @@
-# Use Eclipse Temurin JDK 21 base image
-FROM eclipse-temurin:21-jdk-alpine as build
+FROM maven:3.9.6-eclipse-temurin-21-alpine as build
 
 WORKDIR /build
 COPY . .
 
-RUN ./mvnw package -DskipTests
+RUN mvn package -DskipTests
 
 FROM eclipse-temurin:21-jdk-alpine
 
